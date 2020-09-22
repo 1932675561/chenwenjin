@@ -1,0 +1,16 @@
+1. git remote -v 查看远程库信息：
+2.git remote rm origin(删除关联的origin的远程库)
+3.git remote add origin http：//github.com/1932675561/chenwenjin
+4.git push -u origin master  把本地库的所有内容推送到远程仓库（也就是Github）上 （由于新建的远程仓库是空的，所以要加上-u这个参数）
+
+
+5.git branch   查看当前git中可用的分支，名称前面有*号表示当前正在使用的分支
+6.git branch "分支名称"　 创建分支
+7.git checkout "分支名称"    切换到分支
+8.git删除分支
+　　　　　　　　git branch -d "分支名称"
+　　　　　　　　git branch -D "分支名称"    强制删除
+9.本地的分支删除之后，也需要将远程的分支一起删除（服务器上的分支）
+　　　　　　　　git push origin --delete "分支名称"
+10.　推送一个空的分支到服务器
+　　　　　　　　git push origin :dev
